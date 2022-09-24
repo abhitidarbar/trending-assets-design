@@ -1,38 +1,114 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow&display=swap");
+
+.heading {
+  font-family: "Tomorrow", sans-serif;
+  color: #ecf0ff;
+  letter-spacing: -0.01em;
+}
+.card {
+  margin-top: 100px;
+  width: 290.74px;
+  height: 350.08px;
+  background: linear-gradient(
+    180deg,
+    rgba(98, 106, 136, 0.1) 0%,
+    rgba(46, 49, 73, 0.1) 107.43%
+  );
+  backdrop-filter: blur(50px);
+  border-radius: 20px;
+}
+.coin {
+  font-family: "Tomorrow", sans-serif;
+  line-height: 31px;
+  color: #737BAE;
+}
+.price {
+  background: #14172B;
+  border-radius: 17px;
+  width: 242px;
+  height: 40px;
+}
+.amount {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 31px;
   text-align: center;
+  color: #ECF0FF;
+  font-family: 'Tomorrow';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.change {
+  font-family: 'Tomorrow';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 31px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.positive {
+  color: #00FFA3;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.negative {
+  color: #FF4D4D;
+}
+.pairs {
+  width: 121.75px;
+  height: 40px;
+  background: #14172B;
+  border-radius: 29.5px;
+}
+.icon {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  background: #14172B;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  z-index:1000;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.icon::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:-23px;
+  width:30px;
+  height:30px;
+  background:transparent;
+  border-top-right-radius: 70px;
+  box-shadow: 15px -15px 0 15px #14172B;
 }
+.icon::after {
+  content: "";
+  position: absolute;
+  top:0;
+  right:-23px;
+  width:30px;
+  height:30px;
+  background:transparent;
+  border-top-left-radius: 70px;
+  box-shadow: -15px -15px 0 15px #14172B;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.iconBorder {
+  top: -50px;
+  position: relative;
+  z-index: 10000;
+  backdrop-filter: blur(50px);
+  height: 100px;
+  width:100px;
+  border-radius: 50px;
+}
+.btc-gradient {
+  background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+}
+.sol-gradient {
+  background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(220, 31, 255, 0.1) 100%);
+}
+.eth-gradient {
+  background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(237, 240, 244, 0.1) 100%);
+}
+.bnb-gradient {
+  background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+}
+.shib-gradient {
+  background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
 }
